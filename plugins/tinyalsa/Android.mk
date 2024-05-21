@@ -1,4 +1,5 @@
 LOCAL_PATH := $(call my-dir)
+ifneq ($(QCPATH),)
 # Build libagm_pcm_plugin
 include $(CLEAR_VARS)
 
@@ -136,3 +137,4 @@ endif
 
 include $(BUILD_SHARED_LIBRARY)
 
+endif
